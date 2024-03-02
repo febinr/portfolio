@@ -1,0 +1,10 @@
+fileignoreconfig:
+- filename: portfolio/src/assets/stackIcons/mysql.svg
+  checksum: 53c76cfbeb9a76b92bf824388b661827906380b99cfab0f063ad0a19c63790b4
+- filename: portfolio/src/assets/stackIcons/postgresql.svg
+  checksum: ad9118075a2a20613a6c83e6632f9d928ae6d7bc44aa214338bae1b54cae5170
+- filename: portfolio/package-lock.json
+  checksum: 080a189897e99c4182700df6667ec74640612fc5304269f4190df58fdec99a0a
+version: ""
+scopeconfig:
+- scope: node

@@ -1,0 +1,77 @@
+.height {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.bgimg {
+    background-color: #018786;
+}
+
+.container {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.detailsContainer{
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    /* width: 0; */
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(50);
+    animation-fill-mode: infinite;
+    color: white;
+
+}
+
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+}
+
+.downArrow {
+    position: absolute;
+    top: calc(100vh - 100px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    color: white
+  }
+  
+  .downArrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  .downArrow {
+    animation: jumpInfinite 1.5s infinite;
+  }
